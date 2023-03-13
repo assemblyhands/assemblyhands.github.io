@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<html>
+
+<style type="text/css">
+body {
+	font-family: "Titillium Web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	font-size: 17px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 980px;
+}
+h1 {
+	font-weight:300;
+	line-height: 1.15em;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+a:link,a:visited {
+	color: #1367a7;
+	text-decoration: none;
+}
+a:hover {
+	color: #208799;
+}
+h1, h2, h3 {
+	text-align: center;
+}
+h1 {
+	font-size: 40px;
+	font-weight: 500;
+}
+h2, h3 {
+	font-weight: 400;
+	margin: 16px 0px 4px 0px;
+}
+.paper-title {
+	padding: 16px 0px 16px 0px;
+}
+section {
+	margin: 32px 0px 32px 0px;
+	text-align: justify;
+	clear: both;
+}
+.col-5 {
+	 width: 20%;
+	 float: left;
+}
+.col-4 {
+	 width: 25%;
+	 float: left;
+}
+
+.col-3a {
+	 width: 33.3%;
+	 float: left;
+	 text-align: right;
+}
+
+.col-3b {
+	 width: 33.3%;
+	 float: left;
+	 text-align: center;
+}
+
+.col-3c {
+	 width: 33.3%;
+	 float: left;
+	 text-align: left;
+}
+
+.col-2 {
+	 width: 50%;
+	 float: left;
+}
+.row, .author-row, .affil-row {
+	 overflow: auto;
+}
+.author-row, .affil-row {
+	font-size: 20px;
+}
+.row {
+	margin: 16px 0px 16px 0px;
+}
+.authors {
+	font-size: 18px;
+}
+.affil-row {
+	margin-top: 16px;
+}
+.teaser {
+	max-width: 100%;
+}
+.text-center {
+	text-align: center;
+}
+.screenshot {
+	width: 256px;
+	border: 1px solid #ddd;
+}
+.screenshot-el {
+	margin-bottom: 16px;
+}
+hr {
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ddd;
+	margin: 0;
+}
+.material-icons {
+	vertical-align: -6px;
+}
+p {
+	line-height: 1.25em;
+}
+.caption_justify {
+	font-size: 16px;
+	color: #666;
+	text-align: justify;
+	margin-top: 0px;
+	margin-bottom: 64px;
+}
+.caption {
+	font-size: 16px;
+	color: #666;
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 64px;
+}
+.caption_inline {
+	font-size: 16px;
+	color: #666;
+	text-align: center;
+	margin-top: 8px;
+	margin-bottom: 0px;
+}
+.caption_bold {
+	font-size: 16px;
+	color: #666;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+video {
+	display: block;
+	margin: auto;
+}
+figure {
+	display: block;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#bibtex pre {
+	font-size: 14px;
+	background-color: #eee;
+	padding: 16px;
+}
+.blue {
+	color: #2c82c9;
+	font-weight: bold;
+}
+.orange {
+	color: #d35400;
+	font-weight: bold;
+}
+.flex-row {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.paper-btn {
+  position: relative;
+  text-align: center;
+
+  display: inline-block;
+  margin: 8px;
+  padding: 8px 8px;
+
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+
+  background-color: #1367a7;
+  color: #ecf0f1 !important;
+  font-size: 20px;
+  width: 100px;
+  font-weight: 600;
+}
+.paper-btn-parent {
+	display: flex;
+	justify-content: center;
+	margin: 16px 0px;
+}
+.paper-btn:hover {
+	opacity: 0.85;
+}
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+</style>
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
+<head>
+	<title>AssemblyHands: Towards Egocentric Activity Understanding via 3D Hand Pose Estimation</title>
+	<meta property="og:description" content="AssemblyHands: Towards Egocentric Activity Understanding via 3D Hand Pose Estimation"/>
+	<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+	<div class="paper-title">
+		<h1>AssemblyHands: Towards Egocentric Activity Understanding via 3D Hand Pose Estimation</h1>
+	</div>
+
+	<div id="authors">
+		<div class="author-row">
+			<div class="col-3a text-center"><a href="https://tkhkaeio.github.io/">Takehiko Ohkawa<sup>1,2</sup></a></div>
+			<div class="col-3b text-center"><a href="https://scholar.google.com/citations?user=eLFhiSYAAAAJ&hl=en">Kun He<sup>1</sup></a></div>            
+			<div class="col-3c text-center"><a href="https://scholar.google.com/citations?user=-juoweoAAAAJ">Fadime Sener<sup>1</sup></a></div>
+			<div class="col-3a text-center"><a href="https://cmp.felk.cvut.cz/~hodanto2/">Tomáš Hodaň<sup>1</sup></a></div>
+			<div class="col-3b text-center"><a href="https://scholar.google.co.jp/citations?user=YV0TVrQAAAAJ&hl">Luan Tran<sup>1</sup></a></div>
+			<div class="col-3c text-center"><a href="https://scholar.google.com/citations?user=9HoiYnYAAAAJ&hl=en">Cem Keskin<sup>1</sup></a></div>
+		</div>
+
+		<div class="affil-row">
+			<div class="col-1 text-center"><sup>1</sup>Reality Labs at Meta</div>
+			<div class="col-1 text-center"><sup>2</sup>The University of Tokyo</div>
+		</div>
+
+		<div class="affil-row">
+			<div class="text-center"><strong style="color: darkblue;">CVPR 2023</strong></div>
+		</div>
+    
+    <div class="text-center">Coming soon!</div>
+		
+	<!-- <section id="license">
+		<h2>License</h2>
+		<hr>
+		<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />AssemblyHands is licensed by us under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. The terms of this license are:
+		<p><strong>Attribution</strong> : You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</p>
+		<p><strong>NonCommercial</strong> : You may not use the material for commercial purposes.</p>
+	</section>
+	
+	<section id="bibtex">
+		<h2>Citation</h2>
+		<hr>
+		<pre><code>@inproceedings{ohkawa:cvpr23,
+    title     = {{AssemblyHands:} Towards Egocentric Activity Understanding via 3D Hand Pose Estimation},
+    author    = {Takehiko Ohkawa and Kun He and Fadime Sener and Tomas Hodan and Luan Tran and Cem Keskin},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    pages     = {X--Y},
+    year      = {2023},
+    }
+    </code></pre> -->
+</div>
+</body>
+</html>
