@@ -239,32 +239,86 @@ figure {
 		</div>
 
 		<div class="affil-row">
-			<!-- <div class="col-1 text-center"><sup>1</sup>Reality Labs at Meta</div>
-			<div class="col-1 text-center"><sup>2</sup>The University of Tokyo</div> -->
             <div class="col-1 text-center"><sup>1</sup>Meta Reality Labs&emsp;&emsp;<sup>2</sup>The University of Tokyo</div>
 		</div>
 
 		<div class="affil-row">
 			<div class="text-center"><strong style="color: darkblue;">CVPR 2023</strong></div>
 		</div>
+
+        <!-- <div style="clear: both">
+			<div class="paper-btn-parent">
+				<a class="paper-btn" href="https://openaccess.thecvf.com/tbd">
+					<span class="material-icons"> description </span>
+					Paper
+				</a>
+				<a class="paper-btn" href="https://github.com/assemblyhands/tbd">
+					<span class="material-icons"> file_download </span>
+					Dataset
+				</a>
+				<a class="paper-btn" href="https://github.com/assemblyhands?tab=repositories">
+					<span class="material-icons"> code </span>
+					Code
+				</a>
+			</div>
+		</div> -->
+    </div>   
     
-        <section id="abstract">
-            <h2>Abstract</h2>
-            <hr>
-            <p>
-                We present AssemblyHands, a large-scale benchmark dataset with accurate 3D hand pose annotations, to facilitate the study of egocentric activities with challenging hand-object interactions. The dataset includes synchronized egocentric and exocentric images sampled from the recent Assembly101 dataset, in which participants assemble and disassemble take-apart toys. To obtain high-quality 3D hand pose annotations for the egocentric images,  we develop an efficient pipeline, where we use an initial set of manual annotations to train a model to automatically annotate a much larger dataset. Our annotation model uses multi-view feature fusion and an iterative refinement scheme, and achieves an average keypoint error of 4.20 mm, which is 85 % lower than the error of the original annotations in Assembly101. AssemblyHands provides 3.0M annotated images, including 490K egocentric images, making it the largest existing benchmark dataset for egocentric 3D hand pose estimation. Using this data, we develop a strong single-view baseline of 3D hand pose estimation from egocentric images. Furthermore, we design a novel action classification task to evaluate predicted 3D hand poses. Our study shows that having higher-quality hand poses directly improves the ability to recognize actions.
-            </p>
-        </section>
+    <section id="teaser-videos">   
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <iframe width="800" height="400" src="https://www.youtube.com/embed/34wmdm7_X8k?autoplay=1&mute=1&showinfo=0&modestbranding=1&controls=0&disablekb=1&playsinline=1&loop=1&playlist=34wmdm7_X8k" frameborder="0"></iframe>
+            </div>
+            <div class="col-xs-12 text-center" style="font-style: italic;">
+                <b>Visualization of automatically generated annotations of 3D hand poses.</b><br>
+                (Row 1-4: exocentric views, Row 5: egocentric views)
+            </div>
+        </div>
+    </section>
+
+    <section id="news">
+		<h2>News</h2>
+		<hr>
+		<div class="row">			
+			<div><span class="material-icons"> description </span> [April 2nd 2023] Project page released.</div>
+		</div>
+	</section>
+
+    <section id="abstract">
+        <h2>Abstract</h2>
+        <hr>
+        <p>
+            We present AssemblyHands, a large-scale benchmark dataset with accurate 3D hand pose annotations, to facilitate the study of egocentric activities with challenging hand-object interactions. The dataset includes synchronized egocentric and exocentric images sampled from the recent Assembly101 dataset, in which participants assemble and disassemble take-apart toys. To obtain high-quality 3D hand pose annotations for the egocentric images,  we develop an efficient pipeline, where we use an initial set of manual annotations to train a model to automatically annotate a much larger dataset. Our annotation model uses multi-view feature fusion and an iterative refinement scheme, and achieves an average keypoint error of 4.20 mm, which is 85 % lower than the error of the original annotations in Assembly101. AssemblyHands provides 3.0M annotated images, including 490K egocentric images, making it the largest existing benchmark dataset for egocentric 3D hand pose estimation. Using this data, we develop a strong single-view baseline of 3D hand pose estimation from egocentric images. Furthermore, we design a novel action classification task to evaluate predicted 3D hand poses. Our study shows that having higher-quality hand poses directly improves the ability to recognize actions.
+        </p>
+        <div class="col-xs-12 text-center">
+            <img src="https://user-images.githubusercontent.com/28190044/229331527-6da02520-af0a-4b75-a108-856bc47492cb.png" width="600">
+        </div>
+        <div class="col-xs-12" style="font-style: italic;margin: auto;">
+            <b>High-quality 3D hand poses as an effective representation for egocentric activity understanding. </b>
+            AssemblyHands provides high-quality 3D hand pose annotations computed from multi-view exocentric images sampled from Assembly101, which originally comes with inaccurate annotations computed from egocentric images (see the incorrect left-hand pose prediction). As we experimentally demonstrate on an action classification task, models trained on high-quality annotations achieve significantly higher accuracy.
+        </div>
+    </section>
+
+    <section id="dataset">
+        <h2>Dataset</h2>
+        <hr>
+        <div class="col-xs-12 text-center">
+            <img src="https://user-images.githubusercontent.com/28190044/229331693-30f7fd3e-050e-4c38-98da-4dfba75fa053.png" width="960">
+        </div>
+        <div class="col-xs-12" style="font-style: italic;">
+            <b>Comparison of AssemblyHands with existing 3D hand pose datasets.</b> “M” and “A” stand for manual and automatic annotation, respectively. AssemblyHands is the largest existing benchmark for egocentric 3D hand pose estimation.
+        </div>
+    </section>
     
 		
-	<!-- <section id="license">
+	<section id="license">
 		<h2>License</h2>
 		<hr>
 		<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />AssemblyHands is licensed by us under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. The terms of this license are:
 		<p><strong>Attribution</strong> : You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</p>
-		<p><strong>NonCommercial</strong> : You may not use the material for commercial purposes.</p>
+		<p><strong>NonCommercial</strong> : You may not use the material for commercial purposes.</p>        
 	</section>
-	-->
+	
 
 	<section id="bibtex">
 		<h2>Citation</h2>
